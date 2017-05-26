@@ -16,5 +16,7 @@ public:
 	void trim(string &str);
 	int DecodeRemotFileCurl(const std::string & rStrRemotUrl, cv::Mat & decodeMat);
 	int Write2String(char *data, size_t size, size_t nmemb, string * writerData);
+	std::string base64_encode(unsigned char const* bytes_to_encode, unsigned int in_len);
+	std::string base64_decode(std::string const& encoded_string);
 };
 #endif
