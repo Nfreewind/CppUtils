@@ -2,6 +2,7 @@
 #define STRING_H
 #include <iostream>
 #include <string>
+#include <sstream>
 using namespace std;
 class String
 {
@@ -18,5 +19,6 @@ public:
 	int Write2String(char *data, size_t size, size_t nmemb, string * writerData);
 	std::string base64_encode(unsigned char const* bytes_to_encode, unsigned int in_len);
 	std::string base64_decode(std::string const& encoded_string);
+	std::string to_string(const int number);
 };
 #endif

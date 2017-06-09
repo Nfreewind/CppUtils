@@ -269,3 +269,10 @@ std::string String::base64_decode(std::string const& encoded_string) {
 
 	return ret;
 }
+
+std::string String::to_string(const int number)
+{
+	stringstream ss;
+	ss<<number;
+	return ss.str();
+}

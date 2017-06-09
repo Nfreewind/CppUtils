@@ -1,6 +1,7 @@
 #include "OpencvUtils.h"
 using namespace std;
 using namespace cv;
+
 void OpencvUtils::ShowImage(const cv::Mat img, int delay)
 {
 	cv::namedWindow("show", 0);
